@@ -14,7 +14,10 @@ Because of the extensive data mapping and high-resolution visualizations, the pr
 ## Project Overview:
 This project moves beyond traditional "one-box" genre classification. By analyzing 114,000 Spotify tracks, I developed a deep learning framework that treats musical genre as a spectrum of affinities—Music DNA—rather than a mutually exclusive category.
 ## Key Technical Achievements:
-The Pivot to Sigmoid: Switched from Softmax to Sigmoid activation to allow for "Crossover" genre detection (e.g., a song that is 80% Electronic and 40% Pop). Binary Focal Loss: Implemented Focal Loss ($\gamma = 2.0$) to force the model to learn rare genres (Hip-Hop, Classical) instead of over-predicting the majority "Indie" class.Dynamic Thresholding: Optimized classification cutoffs per genre to maximize the Macro F1-score, moving past the blunt $0.5$ default.Unsupervised Reality Check: Built an Autoencoder with a 4D bottleneck to prove that audio features naturally overlap, justifying the multi-label approach.
+The Pivot to Sigmoid: Switched from Softmax to Sigmoid activation to allow for "Crossover" genre detection (e.g., a song that is 80% Electronic and 40% Pop). 
+Binary Focal Loss: Implemented Focal Loss ($\gamma = 2.0$) to force the model to learn rare genres (Hip-Hop, Classical) instead of over-predicting the majority "Indie" class.
+Dynamic Thresholding: Optimized classification cutoffs per genre to maximize the Macro F1-score, moving past the blunt $0.5$ default.
+Unsupervised Reality Check: Built an Autoencoder with a 4D bottleneck to prove that audio features naturally overlap, justifying the multi-label approach.
 
 ## 📊 Key Results & Visualizations:
 
